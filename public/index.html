@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Declares the document type as HTML5 -->
 <head>
+  <!-- Sets the character encoding for the document to UTF-8 -->
   <meta charset="utf-8" />
+  
+  <!-- Links the favicon (the small icon that appears in the browser tab). %PUBLIC_URL% is a placeholder that gets replaced during the build process with the public folder's URL. -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  
+  <!-- This tag ensures the website is responsive by setting the width to the device width and setting the initial zoom level to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Sets the theme color for the browser UI (for example, the status bar color on mobile devices) -->
   <meta name="theme-color" content="#000000" />
+  
+  <!-- Provides a description of the website for search engines (helps with SEO) -->
   <meta name="description" content="Web site created using create-react-app" />
+  
+  <!-- Links to the manifest.json file, which is used for Progressive Web Apps (PWAs). This file contains metadata about your app like icons and how it should behave when installed on a device. -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Sets the title of the webpage (appears in the browser tab) -->
   <title>Jeffrey | Portfolio</title>
+
+  <!-- Another description tag to provide more SEO info (specific for search engines like Google) -->
   <meta name="description" content="Self Developed personal website build with React.js">
 
-  <!-- Google / Search Engine Tags -->
+  <!-- Google / Search Engine Meta Tags for better visibility in search engine results -->
   <meta itemprop="name" content="S0umyajit | Portfolio">
   <meta itemprop="description" content="Self Developed personal website build with React.js">
   <meta itemprop="image"
     content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+  <!-- The "itemprop" attributes help search engines understand the content of the webpage and provide a rich preview in search results. -->
 
-  <!-- Facebook Meta Tags -->
+  <!-- Facebook Meta Tags (Open Graph Protocol) -->
+  <!-- These tags define how your website will appear when shared on Facebook or other platforms that use Open Graph (like LinkedIn) -->
   <meta property="og:url" content="https://soumyajit.vercel.app">
   <meta property="og:type" content="website">
   <meta property="og:title" content="S0umyajit | Portfolio">
@@ -26,6 +43,7 @@
     content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
 
   <!-- Twitter Meta Tags -->
+  <!-- These tags define how the website will appear when shared on Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="S0umyajit | Portfolio">
   <meta name="twitter:description" content="Self Developed personal website build with React.js">
@@ -34,7 +52,10 @@
 </head>
 
 <body>
+  <!-- <noscript> tag will display this message if the user has JavaScript disabled, informing them that JavaScript is required to run the app -->
   <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- This is the root div where the entire React application will be injected. ReactDOM will render the React components here. -->
   <div id="root"></div>
 </body>
 
